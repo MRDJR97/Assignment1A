@@ -12,6 +12,16 @@ public class courseProgramme {
 	private DateTime startDate;
 	private DateTime endDate;
 	
+	public courseProgramme(String courseName, DateTime startDate,
+			DateTime endDate) {
+		this.courseName = courseName;
+		this.startDate = startDate;
+		this.endDate = endDate;
+	}
+	
+	public void addModule(Module module){
+		this.moduleList.add(module);
+	}
 	public String getCourseName() {
 		return courseName;
 	}

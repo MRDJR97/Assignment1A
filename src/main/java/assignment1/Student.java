@@ -9,9 +9,29 @@ public class Student {
 	private String name;
 	private int age;
 	private DateTime DOB;
-	private int ID;
+	private static int ID;
 	private String username;
 	private List<Module> registeredModules;
+	private int id;
+	
+	public Student(String name, int age, DateTime dOB, int iD) {
+		this.name = name;
+		this.age = age;
+		DOB = dOB;
+		this.id = ID;
+		ID++;
+	}
+	
+	//for test only
+	public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public void enrollInModule(Module module){
+		this.registeredModules.add(module);
+		module.enrollStudent(this);
+	}
 	
 	public String getUsername() {
 		return name+age;

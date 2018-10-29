@@ -8,12 +8,8 @@ public class GetUsernameJunitTest {
 
 	@Test
 	public void test() {
-		Student junit = new Student();
-		int age = 21;
-		String name = "DanielRegan";
-		junit.setAge(age);
-		junit.setName(name);
-		String expectedUsername = name.concat(Integer.toString(age));
+		Student junit = new Student("DanielRegan", 21);
+		String expectedUsername = "DanielRegan21";
 		String actualUsername = junit.getUsername();
 		assertEquals(expectedUsername, actualUsername);
 	}
