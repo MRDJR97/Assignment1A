@@ -11,6 +11,7 @@ public class courseProgramme {
 	private List<Student> studentList;
 	private DateTime startDate;
 	private DateTime endDate;
+	public List<Student> registeredStudents;
 	
 	public courseProgramme(String courseName, DateTime startDate,
 			DateTime endDate) {

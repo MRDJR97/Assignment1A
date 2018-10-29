@@ -12,6 +12,7 @@ public class Student {
 	private static int ID;
 	private String username;
 	private List<Module> registeredModules;
+	private List<courseProgramme> registeredCourses;
 	private int id;
 	
 	public Student(String name, int age, DateTime dOB, int iD) {
@@ -28,9 +29,14 @@ public class Student {
 		this.age = age;
 	}
 
-	public void enrollInModule(Module module){
-		this.registeredModules.add(module);
-		module.enrollStudent(this);
+	
+	public void enrollForCourse(courseProgramme course){
+		this.registeredCourses.add(course);
+		course.registeredStudents.add(this);
+		for(Module module : course.getModuleList()){
+			this.registeredModules.add(module);
+			module.enrollStudent(this);
+		}
 	}
 	
 	public String getUsername() {
@@ -64,11 +70,11 @@ public class Student {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public List getRegisteredCourses() {
+	public List getRegisteredModules() {
 		return registeredModules;
 	}
-	public void setRegisteredCourses(List registeredCourses) {
-		this.registeredModules = registeredCourses;
+	public void setRegisteredModules(List registeredModules) {
+		this.registeredModules = registeredModules;
 	}
 	
 }
