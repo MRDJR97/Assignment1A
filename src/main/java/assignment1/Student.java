@@ -76,10 +76,10 @@ public class Student {
 	public void setRegisteredModules(List registeredModules) {
 		this.registeredModules = registeredModules;
 	}
-	public List getRegisteredCourses() {
+	public List<courseProgramme> getRegisteredCourses() {
 		return registeredCourses;
 	}
-	public void setRegisteredCourses(List registeredCourses) {
+	public void setRegisteredCourses(List<courseProgramme> registeredCourses) {
 		this.registeredCourses = registeredCourses;
 	}
 	
