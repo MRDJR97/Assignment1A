@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class GetUsernameTest {
+public class GetUsernameJunitTest {
 
 	@Test
 	public void test() {
