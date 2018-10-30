@@ -21,7 +21,7 @@ public class courseProgramme {
 	}
 	
 	public void addModule(Module module){
-		this.moduleList.add(module);
+		moduleList.add(module);
 		module.registerForCourse(this);
 	}
 	public String getCourseName() {
