@@ -1,13 +1,14 @@
 package assignment1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Module {
 
 	private String name;
 	private String ID;
-	private List<Student> studentsEnrolled;
-	private List<courseProgramme> courses;
+	private List<Student> studentsEnrolled = new ArrayList();
+	private List<courseProgramme> courses = new ArrayList();
 	
 	public Module(String name, String iD) {
 		this.name = name;

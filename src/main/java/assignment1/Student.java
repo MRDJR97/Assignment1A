@@ -1,5 +1,6 @@
 package assignment1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.joda.time.DateTime;
@@ -11,8 +12,8 @@ public class Student {
 	private DateTime DOB;
 	private static int ID;
 	private String username;
-	private List<Module> registeredModules;
-	private List<courseProgramme> registeredCourses;
+	private List<Module> registeredModules = new ArrayList();
+	private List<courseProgramme> registeredCourses = new ArrayList();
 	private int id;
 	
 	public Student(String name, int age, DateTime dOB, int iD) {
