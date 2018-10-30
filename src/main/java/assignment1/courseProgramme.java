@@ -21,7 +21,7 @@ public class courseProgramme {
 	}
 	
 	public void addModule(Module module){
-		moduleList.add(module);
+		addToModuleList(module);
 		module.registerForCourse(this);
 	}
 	public String getCourseName() {
@@ -33,8 +33,8 @@ public class courseProgramme {
 	public List<Module> getModuleList() {
 		return moduleList;
 	}
-	public void setModuleList(List<Module> moduleList) {
-		this.moduleList = moduleList;
+	public void addToModuleList(Module m) {
+		this.moduleList.add(m);
 	}
 	public List<Student> getStudentList() {
 		return studentList;
