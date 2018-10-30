@@ -4,7 +4,10 @@
   <artifactId>assignment1a</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Assignment 1 Daniel Regan</name>
-  
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
   <dependencies>
   <dependency>
   	<groupId>joda-time</groupId>
